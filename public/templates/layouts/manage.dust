@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Admin | {+title /}</title>
+
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="menu-text">Ceramic Web Portal</li>
+                        <li>
+                            <a href="/manage">Dashboard</a>
+                        </li>
+                        <li><a href="/manage/products">Products</a></li>
+                        <li><a href="/manage/categories">Categories</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li><input type="search" placeholder="Search"></li>
+                        <li><button type="button" class="button">Search</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        {+body /}
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>
+            Imran Khan &copy; Copyright 2018 | <a href="/">Store</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script data-main="/js/app" src="/components/requirejs/require.js"></script>
+
+</body>
+
+</html>

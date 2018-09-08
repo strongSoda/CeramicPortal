@@ -1,21 +1,6 @@
 {>"layouts/master" /}
 
-{<body} <div class="large-3 columns product">
-
-    </div>
-    <div class="large-3 columns product">
-
-    </div>
-    <div class="large-3 columns product">
-
-    </div>
-    <div class="large-3 columns  product">
-
-    </div>
-    <div class="large-3 columns product">
-
-    </div>
-
+{<body} 
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell small-4 product"> <img src="/img/1.jpg" alt="">

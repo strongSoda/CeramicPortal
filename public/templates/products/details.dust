@@ -1,0 +1,27 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-4 product">
+               <img src="/img/1.jpg" alt="">
+            </div>
+            <div class="cell small-8 product">
+               <h2>60x60 cm | Glam</h2>
+               <ul>
+                   <li>Seller: Rocket Sales Corp</li>
+                   <li>Warranty: 2 seconds</li>
+               </ul>
+               <br>
+               <div class="price">Buy it for <span>Rs.330/piece</span></div>
+               <br>
+               <p>
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea nihil nesciunt nemo ducimus cupiditate voluptatum aut ut ipsam corrupti similique!
+               </p>
+               <a href="" class="button success">Add to Cart</a>
+            </div>
+        </div>
+            <!-- <div class="cell small-4">cell</div> -->
+        </div>
+    </div>
+    {/body}
