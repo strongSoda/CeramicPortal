@@ -1,0 +1,28 @@
+.top-bar {
+    margin-bottom: 20px;
+}
+
+.product{}
+
+.product h4{
+    margin-top: 15px;
+}
+
+.price {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.price span {
+    color: green;
+    background-color: #f4f4f4;
+    padding:  10px;
+    border:  1px solid grey;
+    border-radius: 12px;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 12vh;
+    text-align: center;
+}

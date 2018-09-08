@@ -1,0 +1,62 @@
+{>"layouts/master" /}
+
+{<body} <div class="large-3 columns product">
+
+    </div>
+    <div class="large-3 columns product">
+
+    </div>
+    <div class="large-3 columns product">
+
+    </div>
+    <div class="large-3 columns  product">
+
+    </div>
+    <div class="large-3 columns product">
+
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-4 product"> <img src="/img/1.jpg" alt="">
+                <h4>60x60 cm | Glam</h4>
+                <div class="price">Buy it for <span>Rs.200/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <div class="cell small-4 product"><img src="/img/2.jpg" alt="">
+                <h4>60x60 cm - Serie Topaz</h4>
+                <div class="price">Buy it for <span>Rs.330/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <div class="cell small-4 product"> <img src="/img/3.jpg" alt="">
+                <h4>15x60 cm - Wood</h4>
+                <div class="price">Buy it for <span>Rs.200/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <div class="cell small-4 product"> <img src="/img/4.jpg" alt="">
+                <h4>40x80 cm - Signature Wall</h4>
+                <div class="price">Buy it for <span>Rs.140/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <div class="cell small-4 product">
+                <img src="/img/5.jpg" alt="">
+                <h4>60x60 cm - Elegant Soluble Salt</h4>
+                <div class="price">Buy it for <span>Rs.430/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <div class="cell small-4 product">
+                <img src="/img/6.jpg" alt="">
+                <h4>60x60 cm - Premium</h4>
+                <div class="price">Buy it for <span>Rs.400/piece</span></div>
+                <br>
+                <a href="/products/details/1" class="button small">Product Details</a>
+            </div>
+            <!-- <div class="cell small-4">cell</div> -->
+        </div>
+    </div>
+    {/body}
