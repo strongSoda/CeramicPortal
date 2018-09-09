@@ -1,7 +1,6 @@
 node_modules
-/data/db/WiredTiger.lock
-/data/db/mongod.lock
-/data/db/journal/WiredTigerPreplog.0000000002
-/data/db/journal/WiredTigerPreplog.0000000001
-/data/db/journal/WiredTigerLog.0000000003
+data/db/WiredTiger.lock
+data/db/mongod.lock
+data/db/journal/*
+
 
