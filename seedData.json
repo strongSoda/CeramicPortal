@@ -8,3 +8,7 @@
     thumbnail: "2.jpg",
     hero: "2l.jpg"
 }
+
+db.products.insert({title:"60x60 cm - Serie Topaz",description: "Topaz White (Double Charge Vitrified Tiles) and Topaz Brown (Double Charge Vitrified Tiles).",seller: "Kajaria Tiles", category: "bedroom flooring",warranty: "2 years",price: "Rs. 300/piece",thumbnail: "2.jpg", hero: "2l.jpg"})
+
+mongod --dbpath="C:\Users\Imran\Ceramic Web Portal\data\db"
