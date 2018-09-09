@@ -26,3 +26,8 @@ footer{
     margin-top: 12vh;
     text-align: center;
 }
+
+.seller , .category {
+    color: grey;
+    font-size: 15px;
+}
