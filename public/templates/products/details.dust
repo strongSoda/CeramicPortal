@@ -3,10 +3,10 @@
 {<body}
     <div class="grid-container">
         <div class="grid-x grid-margin-x">
-                <div class="cell small-4 product">
+                <div class="cell small-8 product">
                 <img src="/img/{product.hero}" alt="{product.title}">
                 </div>
-                <div class="cell small-8 product">
+                <div class="cell small-4 product">
                 <h2>{product.title}</h2>
                 <ul>
                     <li>Seller: {product.seller}</li>
