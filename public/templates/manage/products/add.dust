@@ -1,2 +1,105 @@
-Add Products
 {>"layouts/manage" /}
+
+{<body}
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 product">
+                <h2>Add Product</h2>
+                <form action="/manage/products" method="post">
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="title">
+                                        Title 
+                                        <input type="text" required name="title" id="" placeholder="My cute little tile">
+                                    </label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="seller">
+                                            Seller
+                                        <input type="text" required name="seller" id="" placeholder="Sir Rajnikanth">
+                                    </label>
+                                </div>
+                            </div>
+                    </div>     
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="price">
+                                            Price
+                                        <input type="text" name="price" required id="" placeholder="'Rs. 200 / piece' OR 'INR 200 /Piece' OR Rs. 2000 / dozen ">
+                                    </label>
+                                </div>
+                            </div>
+                    </div>    
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="warranty">
+                                            Warranty
+                                        <input type="text" name="warranty" id="" placeholder="1 year">
+                                    </label>
+                                </div>
+                            </div>
+                    </div>    
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="category">
+                                            Category
+                                          <select name="category" id="" required>
+                                                {#categories}
+                                                   <option value="{.name}">{.name}</option>
+                                                {/categories}
+                                          </select>                                                                 
+                                    </label>
+                                </div>
+                            </div>
+                    </div>    
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="hero">
+                                            Hero Image URL
+                                        <input type="text" name="hero" id="" placeholder="http://img.jpg" required>
+                                    </label>
+                                </div>
+                            </div>
+                    </div>    
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="thumbnail">
+                                            Thumbnail Image URL
+                                        <input type="text" name="thumbnail" id="" placeholder="http://img.jpg" required>
+                                    </label>
+                                </div>
+                            </div>
+                    </div>    
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                    <label for="description">
+                                        Description
+                                       <textarea name="description" id="" cols="30" rows="10" placeholder="My Awesome Product"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                    </div>     
+                    <div class="grid-container">
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell small-12 product">
+                                   <input type="submit" value="Submit">
+                                </div>
+                            </div>
+                    </div> 
+                    <input type="hidden" name="_csrf" value="{_csrf}">            
+                </form>
+            </div>
+        </div>
+    </div>                    
+{/body}
