@@ -129,6 +129,17 @@ module.exports = function(router){
         });
     });
 
+    router.post('/products/delete/:id', function(req,res){
+        Product.remove({_id: req.params.id}, function(err){
+            if(err){
+                console.log(err);
+            }
+            req.flash('success', "Product Deleted");
+            res.location('/manage/products');
+            res.redirect('/manage/products');
+        })
+    })
+
     router.get('/categories',function(req,res){
         res.render('manage/categories/index');
     });

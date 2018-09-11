@@ -22,7 +22,13 @@
                         <td>{.title}</td>
                         <td>{.category}</td>
                         <td><a class="button" href="/manage/products/edit/{._id}">EDIT</a></td>
-                        <td><a class="button alert removeProduct" data-id="{._id}" href="#">DELETE</a></td>
+                        <td>
+                            <form action="/manage/products/delete/{._id}" method="post">
+                                <input type="submit" value="Delete" class="button alert">
+                                <input type="hidden" name="_csrf" value="{_csrf}">
+                                <input type="hidden" name="_method" value="DELETE">
+                            </form>
+                        </td>
                     </tr>
                 {/products}
             </tbody>
