@@ -74,6 +74,24 @@ module.exports = function(router){
         })
     });
 
+    router.get('/products/edit/:id', function(req,res) {
+        Category.find({}, function( err, categories){
+            Product.findOne({_id: req.params.id}, function(err, product) {
+                if(err) {
+                    console.log(err);
+                }
+    
+                var model = {
+                    product: product,
+                    categories: categories
+                };
+    
+                res.render('manage/products/edit', model);
+
+            });            
+        });
+    });
+
     router.get('/categories',function(req,res){
         res.render('manage/categories/index');
     });
