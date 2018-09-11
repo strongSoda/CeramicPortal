@@ -92,6 +92,43 @@ module.exports = function(router){
         });
     });
 
+    router.post('/products/edit/:id' , function(req,res) {
+        var title = req.body.title && req.body.title.trim();
+        var description = req.body.description && req.body.description.trim();
+        var seller = req.body.seller && req.body.seller.trim();
+        var category = req.body.category && req.body.category.trim();
+        var price = req.body.price && req.body.price.trim();
+        var thumbnail = req.body.thumbnail && req.body.thumbnail.trim();
+        var hero = req.body.hero && req.body.hero.trim();
+        var warranty = req.body.warranty && req.body.warranty.trim();
+
+        if(title == '' || price == '' || seller == '' || hero == '' || thumbnail == '' ) {
+            req.flash('error', "Please fill out the required fields");
+            res.location('/manage/products/edit');
+            res.redirect('/manage/products/edit');
+        }
+
+        Product.update({_id: req.params.id}, {
+
+            title: title,
+            category: category,
+            seller: seller,
+            warranty: warranty,
+            price: price,
+            description: description,
+            hero: hero,
+            thumbnail: thumbnail
+        }, function(err){
+            if(err) {
+            console.log("update error" , err);
+            }
+            req.flash('success',"Product Updated");
+            res.location('/manage/products');
+            res.redirect('/manage/products');
+         
+        });
+    });
+
     router.get('/categories',function(req,res){
         res.render('manage/categories/index');
     });
