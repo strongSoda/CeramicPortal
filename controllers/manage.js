@@ -47,7 +47,7 @@ module.exports = function(router){
         var warranty = req.body.warranty && req.body.warranty.trim();
 
         if(title == '' || price == '' || seller == '' || hero == '' || thumbnail == '' ) {
-            req.flash('error', "Please fill out the required fields");
+            // req.flash('error', "Please fill out the required fields");
             res.location('/manage/products/add');
             res.redirect('/manage/products/add');
         }
@@ -68,7 +68,7 @@ module.exports = function(router){
                 console.log('save error', err);
             }
 
-            req.flash('success',"Product Added");
+            // req.flash('success',"Product Added");
             res.location('/manage/products');
             res.redirect('/manage/products');
         })
@@ -103,7 +103,7 @@ module.exports = function(router){
         var warranty = req.body.warranty && req.body.warranty.trim();
 
         if(title == '' || price == '' || seller == '' || hero == '' || thumbnail == '' ) {
-            req.flash('error', "Please fill out the required fields");
+            // req.flash('error', "Please fill out the required fields");
             res.location('/manage/products/edit');
             res.redirect('/manage/products/edit');
         }
@@ -122,7 +122,7 @@ module.exports = function(router){
             if(err) {
             console.log("update error" , err);
             }
-            req.flash('success',"Product Updated");
+            // req.flash('success',"Product Updated");
             res.location('/manage/products');
             res.redirect('/manage/products');
          
@@ -134,7 +134,7 @@ module.exports = function(router){
             if(err){
                 console.log(err);
             }
-            req.flash('success', "Product Deleted");
+            // req.flash('success', "Product Deleted");
             res.location('/manage/products');
             res.redirect('/manage/products');
         })
