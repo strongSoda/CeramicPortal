@@ -10,7 +10,7 @@
                         <h4>{.title}</h4>
                         <div class="seller">Seller : {.seller}</div>
                         <h6 class="category">Category: {.category}</h6>
-                        <div class="price">Buy it for <span>{.price}</span></div>
+                        <div class="price">Price INR. <span>{.price}</span> per piece</div>
                         <br>
                         <a href="/products/details/{._id}" class="button small">Product Details</a>
                     </div>

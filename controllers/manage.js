@@ -42,9 +42,13 @@ module.exports = function(router){
         var seller = req.body.seller && req.body.seller.trim();
         var category = req.body.category && req.body.category.trim();
         var price = req.body.price && req.body.price.trim();
-        var thumbnail = req.body.thumbnail && req.body.thumbnail.trim();
+        var thumbnail = req.body.thumbnail ;//&& req.body.thumbnail.trim()
         var hero = req.body.hero && req.body.hero.trim();
         var warranty = req.body.warranty && req.body.warranty.trim();
+        var gallery1 = req.body.gallery1 && req.body.gallery1.trim();
+        var gallery2 = req.body.gallery2 && req.body.gallery2.trim();
+        var gallery3 = req.body.gallery3 && req.body.gallery3.trim();
+        var gallery4 = req.body.gallery4 && req.body.gallery4.trim();
 
         if(title == '' || price == '' || seller == '' || hero == '' || thumbnail == '' ) {
             // req.flash('error', "Please fill out the required fields");
@@ -60,7 +64,11 @@ module.exports = function(router){
             seller: seller,
             price: price,
             hero: hero,
-            thumbnail: thumbnail
+            thumbnail: thumbnail,
+            gallery1: gallery1,
+            gallery2: gallery2,
+            gallery3: gallery3,
+            gallery4: gallery4
         });
 
         newProduct.save(function(err) {
@@ -98,7 +106,7 @@ module.exports = function(router){
         var seller = req.body.seller && req.body.seller.trim();
         var category = req.body.category && req.body.category.trim();
         var price = req.body.price && req.body.price.trim();
-        var thumbnail = req.body.thumbnail && req.body.thumbnail.trim();
+        var thumbnail = req.body.thumbnail && req.body.thumbnail.trim() ;
         var hero = req.body.hero && req.body.hero.trim();
         var warranty = req.body.warranty && req.body.warranty.trim();
 

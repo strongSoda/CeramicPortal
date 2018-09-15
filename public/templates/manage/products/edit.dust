@@ -32,7 +32,7 @@
                                 <div class="cell small-12 product">
                                     <label for="price">
                                             Price
-                                        <input type="text" name="price" required id="" value="{product.price}">
+                                        <input type="number" name="price" required id="" value="{product.price}">
                                     </label>
                                 </div>
                             </div>
@@ -80,7 +80,47 @@
                                     </label>
                                 </div>
                             </div>
+                    </div>  
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 product">
+                                <label for="thumbnail">
+                                        Gallery Image-1 URL
+                                    <input type="text" name="gallery1" id="" value="{product.gallery1}" required>
+                                </label>
+                            </div>
+                        </div>
                     </div>    
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 product">
+                                <label for="thumbnail">
+                                        Gallery Image-2 URL
+                                    <input type="text" name="gallery2" id="" value="{product.gallery2}" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 product">
+                                <label for="thumbnail">
+                                        Gallery Image-3 URL
+                                    <input type="text" name="gallery3" id="" value="{product.gallery3}" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="grid-container">
+                        <div class="grid-x grid-margin-x">
+                            <div class="cell small-12 product">
+                                <label for="thumbnail">
+                                        Gallery Image-4 URL
+                                    <input type="text" name="gallery4" id="" value="{product.gallery4}" required>
+                                </label>
+                            </div>
+                        </div>
+                    </div>      
                     <div class="grid-container">
                             <div class="grid-x grid-margin-x">
                                 <div class="cell small-12 product">

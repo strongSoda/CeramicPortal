@@ -9,9 +9,13 @@ var productModel = function(){
         seller: String,
         category: String,
         warranty: String,
-        price: String,
+        price: Number,
         thumbnail: String,
-        hero: String
+        hero: String,
+        gallery1: String,
+        gallery2: String,
+        gallery3: String,
+        gallery4: String
     });
     return mongoose.model('Product', productSchema);
 };
