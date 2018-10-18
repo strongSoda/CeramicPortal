@@ -1,6 +1,14 @@
 Ceramic Web Portal
 ===========
 
+<p align="center">
+  <img width="333" height="564" src="https://i.imgur.com/dI9mVjU.png">
+  <div  style="font-size:80%;min-width: 100vw;margin-left:40%">
+    <u>designed by <a href="https://github.com/ggabogarcia" >Gabriel Garcia</a></u>
+</div>
+</p>
+
+
 An e-commerce type platform for everything related to ceramics and ceramics trading
 
 
