@@ -2,7 +2,6 @@
 
 {<body} 
 
-   
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
               {#products}
@@ -50,5 +49,4 @@
               {/products}
             </div>
         </div>
-    
     {/body}
