@@ -14,8 +14,8 @@
                     <th width="200">ID</th>
                     <th width="200">Book Title</th>
                     <th width="200">Category</th>
-                    <th width="180">"Button"</th>
-                    <th width="180">"Button"</th>
+                    <th width="180">Update</th>
+                    <th width="180">Delete</th>
                 </tr>
             </thead>
             <tbody>

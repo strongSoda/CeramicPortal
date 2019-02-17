@@ -3,11 +3,21 @@
 var Product = require('../models/productModel');
 var Category = require('../models/categoryModel');
 
+/**
+ * ----------------------------
+ * dashboard home routes below
+ * ----------------------------
+ *  */ 
 module.exports = function(router){
     router.get('/',function(req,res){
         res.render('manage/index');
     });
 
+/**
+ * ----------------------------
+ *products manage routes below
+ * ----------------------------
+ *  */ 
     router.get('/products',function(req,res){
         Product.find({}, function(err, products){
             if(err) {
@@ -51,7 +61,7 @@ module.exports = function(router){
         var gallery4 = req.body.gallery4 && req.body.gallery4.trim();
 
         if(title == '' || price == '' || seller == '' || hero == '' || thumbnail == '' ) {
-            // req.flash('error', "Please fill out the required fields");
+            // req.flash('error', "Please fill out the required fields"); //bug in this module
             res.location('/manage/products/add');
             res.redirect('/manage/products/add');
         }
@@ -148,6 +158,11 @@ module.exports = function(router){
         })
     })
 
+   /**
+ * --------------------------------
+ * categories manage routes below
+ * --------------------------------
+ *  */ 
     router.get('/categories',function(req,res){
         res.render('manage/categories/index');
     });

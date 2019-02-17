@@ -3,6 +3,7 @@
 var express = require('express');
 var kraken = require('kraken-js');
 
+//-----------------------------------------------------
 /**
  * this flash module has a bug
  * bug unknown and mentioned in the github issues
@@ -10,7 +11,9 @@ var kraken = require('kraken-js');
  * all of it's usage in the app is commented out.
  *  -----------Imran Khan
  */
-var flash = require('connect-flash');
+// var flash = require('connect-flash');
+//-----------------------------------------------------
+
 /**
  * importing the connected mongodB db from mlab via the mongoose client
  */
@@ -37,12 +40,12 @@ options = {
 app = module.exports = express();
 app.use(kraken(options));
 
-// Connect Flash
-app.use(flash());
-app.use(function(req,res, next){
-    res.locals.messages = require('express-messages')(req,res);
-    next();
-});
+// Connect Flash (bug)
+// app.use(flash());
+// app.use(function(req,res, next){
+//     res.locals.messages = require('express-messages')(req,res);
+//     next();
+// });
 
 app.on('start', function () {
     console.log('Application ready to serve requests.');

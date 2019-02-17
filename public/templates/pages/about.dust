@@ -1,0 +1,21 @@
+<!-- About page of the site (static) -->
+
+<!-- inheriting the master layout -->
+{>"layouts/master" /}
+
+<!-- title of page -->
+{<title}
+    About | Maati
+{/title}
+
+<!-- body of page -->
+
+{<body}
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae eum similique delectus alias, quasi cumque veritatis dignissimos eius assumenda expedita officiis dicta ipsum amet fugit ad eligendi nobis!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat rerum aliquid in, exercitationem tempora quod blanditiis provident ipsa similique possimus! Quas tenetur, ipsam repudiandae quod nulla voluptas odio eligendi.</p>
+        </div>
+    </div>
+{/body}
