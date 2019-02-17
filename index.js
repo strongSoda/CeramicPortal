@@ -2,7 +2,18 @@
 
 var express = require('express');
 var kraken = require('kraken-js');
+
+/**
+ * this flash module has a bug
+ * bug unknown and mentioned in the github issues
+ * though the module is imported here 
+ * all of it's usage in the app is commented out.
+ *  -----------Imran Khan
+ */
 var flash = require('connect-flash');
+/**
+ * importing the connected mongodB db from mlab via the mongoose client
+ */
 var db = require('./lib/db');
 
 
