@@ -1,0 +1,109 @@
+<!-- index page for the cart view  -->
+
+{>"layouts/master" /}
+
+<!-- page title -->
+{<title}
+    Your Cart
+{/title}
+
+<!-- page body -->
+
+{<body}
+    <div class="row">
+        <div class="large-12 colums">
+            <h2>Shopping Cart 
+                <!-- empty all the products in the cart -->
+                <span><a href="/cart/remove">Empty Cart</a></span>
+            </h2>
+
+            <!-- check if cart conatins any item -->
+            {?cart.items}
+            <!-- if there are items in cart -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="650">Item</th>
+                            <th width="100">Quantity</th>
+                            <th width="100">Total</th>
+                            <th width="100"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <!-- loop through all the items in the cart -->
+                        <!-- and display the details of each item in a table -->
+                        {#cart.items}
+                            <tr>
+                                <!-- the title will have link to the product details page -->
+                                <td>
+                                    <a href="products/details/{._id}">{.title}</a>
+                                </td>
+                                <td>{.qty}</td>
+
+                                <!-- multiply the price by qty -->
+                                <!-- this will show total per product -->
+                                <td>INR. {@math key="{.price}"
+                                    method="multiply" operand="{.qty}" /} 
+                                </td>
+                            </tr>
+                        {/cart.items}
+                    </tbody>
+                </table>
+            {:else}
+            <!-- if there are no items in cart -->
+                <p>There are no items in your cart.</p>
+            {/cart.items}
+        </div>
+    </div>
+
+
+    <div class="row">
+        <!-- this will show total of entire cart -->
+        <div class="large-6 columns">
+            <h4>Grand Total: <strong>INR. {cart.total}</strong></h4>
+        </div>
+
+        <!-- general paypal sandbox button -->
+        <div class="large-6 columns">
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="POST">
+                 <!-- Specifies buy now button -->
+                 <input type="hidden" name="cmd" value="_xclick">
+                 <!-- paypal email -->
+                 <input type="hidden" name="business" value="ikhan77727@gmail.com">
+                 <!-- item name -->
+                 <input type="hidden" name="item_name" value="MAATI Ceramics">
+                 <!-- item id -->
+                 <input type="hidden" name="item_number" value="1">
+                 <!-- currency code -->
+                 <input type="hidden" name="currency_code" value="INR">
+                 <!-- price -->
+                 <input type="hidden" name="amount" value="{cart.total}">
+                 <!-- specify shipping -->
+                 <input type="hidden" name="no_shipping" value="1">
+                 <!-- return method -->
+                <input type="hidden" name="rm" value="2">
+                <!-- return url -->
+                <!-- if payment is made successfully  -->
+                <input type="hidden" name="return" value="http://localhost:8000">
+                <!-- cancel return url -->
+                <!-- if payment is cancelled  -->
+                <input type="hidden" name="cancel_return" value="http://localhost:8000">
+
+                <!-- Button -->
+                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/btn/btn_buynow_107x26.png"
+                 alt="buy now">
+            </form>
+
+            <!-- my own personalized paypal code -->
+            <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="74ZWTTADCTQWY">
+                <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+            </form> -->
+                
+        </div>
+    </div>
+{/body}

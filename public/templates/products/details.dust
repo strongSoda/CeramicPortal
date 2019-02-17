@@ -7,18 +7,24 @@
                   <img src="{product.hero}" style="height:90vh" alt="{product.title}">
                 </div>
                 <div class="cell small-4 product">
-                <h2>{product.title}</h2>
-                <ul>
-                    <li>Seller: {product.seller}</li>
-                    <li>Warranty: {product.warranty}</li>
-                </ul>
-                <br>
-                <div class="price">Price INR. <span>{product.price}</span>  per piece</div>
-                <br>
-                <p>
-                   {product.description}
-                </p>
-                <a href="" class="button success">Add to Cart</a>
+                  <h2>{product.title}</h2>
+                  <ul>
+                      <li>Seller: {product.seller}</li>
+                      <li>Warranty: {product.warranty}</li>
+                  </ul>
+                  <br>
+                  <div class="price">Price INR. <span>{product.price}</span>  per piece</div>
+                  <br>
+                  <p>
+                    {product.description}
+                  </p>
+
+                  <!-- form to add product to cart -->
+                  <form method="POST" action="/cart/{product._id}">
+                    <input type="submit" class="button success" value="Add To Cart">
+                    <!-- hidden csrf token for csrf protection -->
+                    <input type="hidden" name="_csrf" value="{_csrf}">
+                  </form>
                 </div>
         </div>
             <!-- <div class="cell small-4">cell</div> -->
