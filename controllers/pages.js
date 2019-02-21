@@ -12,4 +12,8 @@ module.exports = function (router) {
     router.get('/about', function (req, res) {
         res.render('pages/about');
     })
+
+    router.get('/COD', function(req,res) {
+        res.render('pages/COD');
+    })
 }

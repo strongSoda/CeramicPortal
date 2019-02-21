@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Admin | {+title /}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/foundation.css">
@@ -45,14 +46,25 @@
     </div>
 
     <footer>
-      <div class="row">
-        <div class="large-12 columns">
-          <p>
-            Imran Khan &copy; Copyright 2018 | <a href="/">Store</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+            <div class="row">
+              <div class="large-12 columns">
+                <p>
+                  Maati &copy; Copyright 2018 | <a class="manage" href="/">Store</a>
+                </p>
+                      <div class="navC">
+                          <div class="">
+                              <ul class="">
+                                  <li>
+                                      <a href="/"><i class="fas fa-home"></i> Home</a>
+                                  </li>
+                                  <li><a href="/pages/about"><i class="fas fa-info"></i> About</a></li>
+                                  <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </footer>
 
 
     <script data-main="/js/app" src="/components/requirejs/require.js"></script>

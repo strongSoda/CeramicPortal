@@ -11,11 +11,20 @@
 <!-- body of page -->
 
 {<body}
-    <div class="row">
+    <div class="about">
         <div class="large-12 columns">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ducimus vitae eum similique delectus alias, quasi cumque veritatis dignissimos eius assumenda expedita officiis dicta ipsum amet fugit ad eligendi nobis!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat rerum aliquid in, exercitationem tempora quod blanditiis provident ipsa similique possimus! Quas tenetur, ipsam repudiandae quod nulla voluptas odio eligendi.</p>
+            <p class="normal-text">Curious programmers with a razor-sharped vision to discover the best solution for smart e-commerce. We desire to build a web responsive app which is optimum for any environment. </p>
+            <p class="normal-text">We provide a one-stop solution for viewing, purchasing and selling of ceramic products. Along with, the lightbox view, which provides a closer look of our products to our clients and makes their shopping easier, by giving them a precise look and feel. Hence, overcoming one of the major hurdles in online trading. </p>
         </div>
     </div>
+    <style>
+        .about{
+            padding: 4em;
+        }
+
+        .about p {
+            font-size: 1.4em;
+        }
+    </style>
 {/body}

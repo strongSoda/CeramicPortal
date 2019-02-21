@@ -38,7 +38,7 @@
                             <tr>
                                 <!-- the title will have link to the product details page -->
                                 <td>
-                                    <a href="products/details/{._id}">{.title}</a>
+                                    <a href="/products/details/{._id}">{.title}</a>
                                 </td>
                                 <td>{.qty}</td>
 
@@ -105,5 +105,16 @@
             </form> -->
                 
         </div>
+        <div class="large-6 columns">
+           <input type="button" value="Cash On Delivery" onclick="cod()">
+        </div>
     </div>
+
+    <script>
+        function cod() {
+            var region = prompt('Enter your location');
+            alert("Your order will be delivered by our " + region + " distributor");
+            window.location.href = "http://localhost:8000/";
+        }
+    </script>
 {/body}

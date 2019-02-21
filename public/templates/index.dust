@@ -8,7 +8,6 @@
                     <div class="cell small-4 product"> <img src="{.thumbnail}" class="" alt="{.title}">
                         <div class="product-body">
                             <h4>{.title}</h4>
-                            <div class="seller normal-text">Seller : {.seller}</div>
                             <h6 class="category normal-text">Category: {.category}</h6>
                             <div class="price normal-text">Price INR. <span>{.price}</span> per piece</div>
                             <br>

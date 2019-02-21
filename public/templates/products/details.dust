@@ -9,7 +9,6 @@
                 <div class="cell small-6 product">
                   <h2>{product.title}</h2>
                   <ul>
-                      <li>Seller: {product.seller}</li>
                       <li>Warranty: {product.warranty}</li>
                   </ul>
                   <br>
