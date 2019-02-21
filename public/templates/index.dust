@@ -5,13 +5,15 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
               {#products}
-                    <div class="cell small-4 product"> <img src="{.thumbnail}" alt="{.title}">
-                        <h4>{.title}</h4>
-                        <div class="seller">Seller : {.seller}</div>
-                        <h6 class="category">Category: {.category}</h6>
-                        <div class="price">Price INR. <span>{.price}</span> per piece</div>
-                        <br>
-                        <a href="/products/details/{._id}" class="button small">Product Details</a>
+                    <div class="cell small-4 product"> <img src="{.thumbnail}" class="" alt="{.title}">
+                        <div class="product-body">
+                            <h4>{.title}</h4>
+                            <div class="seller normal-text">Seller : {.seller}</div>
+                            <h6 class="category normal-text">Category: {.category}</h6>
+                            <div class="price normal-text">Price INR. <span>{.price}</span> per piece</div>
+                            <br>
+                            <a href="/products/details/{._id}" class="button detailsButton">Product Details</a>
+                        </div>
                     </div>
                     <!-- <div class="cell small-4 product"><img src="/img/2.jpg" alt="">
                         <h4>60x60 cm - Serie Topaz</h4>

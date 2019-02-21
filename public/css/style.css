@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
 .top-bar {
     margin-bottom: 20px;
 }
@@ -8,6 +14,9 @@
     margin-top: 15px;
 }
 
+.normal-text,footer {
+    font-family: 'Josefin Sans', sans-serif;
+}
 .price {
     margin: 5px;
     font-size: 18px;
@@ -21,6 +30,9 @@
     border-radius: 12px;
 }
 
+h1,h2,h3,h4 {
+    font-family: 'Crete Round', serif;
+}
 footer{
     padding: 10px;
     margin-top: 12vh;
@@ -33,6 +45,74 @@ footer{
 }
 
 h2 span{
-
     font-size: 18px;
+}
+
+.product {
+    padding-bottom: 3.2em;
+    padding-top: 3.2em;
+}
+
+footer {
+    background-color: #1779ba;
+    color: #efefef;
+    padding-top: 1.2em;
+    font-size: 2em;
+}
+
+.manage{
+    color: #efefef;
+}
+
+.manage:hover{
+    color: #efefef;
+    text-decoration: underline;
+}
+
+.detailsButton{
+    font-size: 1.2em;
+}
+
+.addToCart{
+    background-color: #1779ba;
+    color: #efefef;
+    margin-top: 2em;
+    border-radius: 2em;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+.addToCart:hover, .detailsButton:hover{
+    background-color: #2a2a72;
+}
+
+.grid-container {
+    margin-left: 15vw;
+}
+
+.navC {
+    background-color: #2a2a72;
+    padding: 0.7em;
+    font-size: 1.2em;
+}
+
+.navC li{
+    list-style: none;
+    display: inline;
+    margin-left: 3.3em;
+    color: #efefef;
+}
+
+.navC li a {
+    color: #efefef;
+}
+
+.navC li a:hover {
+    color: #efefef;
+    text-decoration: underline;
+    background-color: #2a2a02;
+}
+
+.navC li {
+    font-family: 'Josefin Sans', sans-serif;
 }
