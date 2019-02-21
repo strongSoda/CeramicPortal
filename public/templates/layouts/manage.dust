@@ -17,24 +17,17 @@
 
     <div class="row">
         <div class="large-12 columns">
-            <div class="top-bar">
-                <div class="top-bar-left">
-                    <ul class="dropdown menu" data-dropdown-menu>
-                        <li class="menu-text">Ceramic Web Portal</li>
-                        <li>
-                            <a href="/manage">Dashboard</a>
-                        </li>
-                        <li><a href="/manage/products">Products</a></li>
-                        <li><a href="/manage/categories">Categories</a></li>
-                    </ul>
-                </div>
-                <div class="top-bar-right">
-                    <ul class="menu">
-                        <li><input type="search" placeholder="Search"></li>
-                        <li><button type="button" class="button">Search</button></li>
-                    </ul>
-                </div>
-            </div>
+                <div class="navC">
+                        <div class="">
+                            <ul class="">
+                                <li class="brand">Maati</li>
+                                <li>
+                                        <a href="/manage">Dashboard</a>
+                                </li>
+                                <li><a href="/manage/products">Products</a></li>
+                                <li><a href="/manage/categories">Categories</a></li>
+                            </ul>
+                        </div>
         </div>
     </div>
 
@@ -53,13 +46,13 @@
                 </p>
                       <div class="navC">
                           <div class="">
-                              <ul class="">
-                                  <li>
-                                      <a href="/"><i class="fas fa-home"></i> Home</a>
-                                  </li>
-                                  <li><a href="/pages/about"><i class="fas fa-info"></i> About</a></li>
-                                  <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-                              </ul>
+                                <ul class="">
+                                        <li>
+                                                <a href="/manage">Dashboard</a>
+                                        </li>
+                                        <li><a href="/manage/products">Products</a></li>
+                                        <li><a href="/manage/categories">Categories</a></li>
+                                    </ul>
                           </div>
                       </div>
                   </div>

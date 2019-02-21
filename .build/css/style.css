@@ -120,3 +120,10 @@ footer .navC {
     background-color: #1779ba;
     font-size: 1.3em;
 }
+
+input[type="submit"] {
+    padding: 0.9em;
+    background-color: #1779ba;
+    color: #efefef;
+    border: none;
+}

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Josefin+Sans" rel="stylesheet">
 <body>
-
     <style>
         .content{
             display: none;
@@ -51,6 +50,7 @@
                         </li>
                         <li><a href="/pages/about"><i class="fas fa-info"></i> About</a></li>
                         <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        <li><a id="login" onclick="login()"></a></li>
                     </ul>
                 </div>
                 <!-- <div class="top-bar-right">
@@ -105,6 +105,24 @@
               $('.content').fadeIn(500);
           });
       });
+
+    var loggedIn = true;
+
+    function displayLogin() {
+        if(loggedIn) {
+            document.getElementById('login').innerHTML = "Logout";
+        } else {
+            document.getElementById('login').innerHTML = "Login";
+        }
+    
+    }
+
+    displayLogin();
+    
+    function login() {
+        loggedIn = false;
+        displayLogin();
+    }
   </script>
 
 </body>
