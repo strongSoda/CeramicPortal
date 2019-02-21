@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/foundation.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Josefin+Sans" rel="stylesheet">
 <body>
 
@@ -44,12 +45,12 @@
             <div class="navC">
                 <div class="">
                     <ul class="">
-                        <li class="">Ceramic Web Portal</li>
+                        <li class="brand">Ceramic Web Portal</li>
                         <li>
-                            <a href="/">Home</a>
+                            <a href="/"><i class="fas fa-home"></i> Home</a>
                         </li>
-                        <li><a href="/pages/about">About</a></li>
-                        <li><a href="/cart">Cart</a></li>
+                        <li><a href="/pages/about"><i class="fas fa-info"></i> About</a></li>
+                        <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
                     </ul>
                 </div>
                 <!-- <div class="top-bar-right">
@@ -75,8 +76,19 @@
           <p>
             Maati &copy; Copyright 2018 | <a class="manage" href="/manage">Manage</a>
           </p>
+                <div class="navC">
+                    <div class="">
+                        <ul class="">
+                            <li>
+                                <a href="/"><i class="fas fa-home"></i> Home</a>
+                            </li>
+                            <li><a href="/pages/about"><i class="fas fa-info"></i> About</a></li>
+                            <li><a href="/cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 </div>
 

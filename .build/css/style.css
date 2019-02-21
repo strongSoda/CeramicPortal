@@ -4,10 +4,6 @@
     padding: 0%;
 }
 
-.top-bar {
-    margin-bottom: 20px;
-}
-
 .product{}
 
 .product h4{
@@ -92,7 +88,7 @@ footer {
 
 .navC {
     background-color: #2a2a72;
-    padding: 0.7em;
+    padding: 0.6em;
     font-size: 1.2em;
 }
 
@@ -110,9 +106,17 @@ footer {
 .navC li a:hover {
     color: #efefef;
     text-decoration: underline;
-    background-color: #2a2a02;
 }
 
 .navC li {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.brand {
+    font-weight: bolder;
+}
+
+footer .navC {
+    background-color: #1779ba;
+    font-size: 1.3em;
 }
