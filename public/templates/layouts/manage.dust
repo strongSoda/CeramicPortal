@@ -22,10 +22,10 @@
                             <ul class="">
                                 <li class="brand">Maati</li>
                                 <li>
-                                        <a href="/manage">Dashboard</a>
+                                        <a href="/manage"><i class="fas fa-columns"></i> Dashboard</a>
                                 </li>
-                                <li><a href="/manage/products">Products</a></li>
-                                <li><a href="/manage/categories">Categories</a></li>
+                                <li><a href="/manage/products"><i class="fas fa-cube"></i> Products</a></li>
+                                <li><a href="/manage/categories"><i class="fab fa-creative-commons-nd"></i> Categories</a></li>
                             </ul>
                         </div>
         </div>
@@ -44,17 +44,17 @@
                 <p>
                   Maati &copy; Copyright 2018 | <a class="manage" href="/">Store</a>
                 </p>
-                      <div class="navC">
-                          <div class="">
-                                <ul class="">
-                                        <li>
-                                                <a href="/manage">Dashboard</a>
-                                        </li>
-                                        <li><a href="/manage/products">Products</a></li>
-                                        <li><a href="/manage/categories">Categories</a></li>
-                                    </ul>
-                          </div>
-                      </div>
+                <div class="navC">
+                        <div class="">
+                            <ul class="">
+                                <li>
+                                        <a href="/manage"><i class="fas fa-columns"></i> Dashboard</a>
+                                </li>
+                                <li><a href="/manage/products"><i class="fas fa-cube"></i> Products</a></li>
+                                <li><a href="/manage/categories"><i class="fab fa-creative-commons-nd"></i> Categories</a></li>
+                            </ul>
+                        </div>
+        </div>
                   </div>
               </div>
           </footer>
