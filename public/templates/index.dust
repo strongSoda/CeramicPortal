@@ -1,15 +1,21 @@
 {>"layouts/master" /}
 
 {<body} 
-
+    <ul class="filter">
+        <li>Filter</li>
+        <li><input type="checkbox" name="Glazed Vitrified" id="Glazed Vitrified" checked> <a onclick="categorize('Glazed Vitrified')">Glazed Vitrified</a></li>
+        <li><input type="checkbox" name="Polished vitrified tiles" id="Polished vitrified tiles" checked><a onclick="categorize('Polished vitrified tiles')">Polished vitrified tiles</a></li> 
+        <li><input type="checkbox" name="Ceramic Tiles" id="Ceramic Tiles" checked><a onclick="categorize('Ceramic Tiles')">Ceramic Tiles</a></li>
+        <li><input type="checkbox" name="Paving tiles" id="Paving tiles" checked><a onclick="categorize('Paving tiles')">Paving tiles</a></li>
+    </ul>
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
               {#products}
-                    <div class="cell small-4 product"> <img src="{.thumbnail}" class="" alt="{.title}">
+                    <div class="cell small-4 product {.category}"> <img src="{.thumbnail}" class="" alt="{.title}">
                         <div class="product-body">
                             <h4>{.title}</h4>
-                            <h6 class="category normal-text">Category: {.category}</h6>
-                            <div class="price normal-text">Price INR. <span>{.price}</span> per piece</div>
+                            <h6 class="category normal-text">{.category}</h6>
+                            <div class="price normal-text">Price INR. <strike id="bigPrice"></strike><span id="mainPrice">{.price}</span> per piece (10% off)</div>
                             <br>
                             <a href="/products/details/{._id}" class="button detailsButton">Product Details</a>
                         </div>
@@ -49,5 +55,23 @@
                     <!-- <div class="cell small-4">cell</div> -->
               {/products}
             </div>
-        </div>
+        </div>  
+        <script>
+            function categorize (category) {
+                console.log("inside categorize");
+                var products = document.getElementsByClassName("category");
+                var productDivs = document.getElementsByClassName(category);
+                for(product of products) {
+                    if(!(product.innerHTML == category)) {
+                       for(productDiv of productDivs) {
+                           if(!(productDiv.classList.contains(category)))
+                        productDiv.classList.add("dontshowme");
+                        document.getElementById("Glazed Vitrified").checked = false;
+                       }
+                    } else {
+                        
+                    }
+                }
+            }
+        </script>
     {/body}

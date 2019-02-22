@@ -15,6 +15,7 @@
         "construx-copier": "^1.0.0",
         "construx-dustjs": "^1.1.0",
         "construx-less": "^1.0.0",
+        "dust-intl": "^1.1.1",
         "dust-makara-helpers": "^4.2.0",
         "dustjs-helpers": "^1.7.4",
         "eslint": "^1.10.3",

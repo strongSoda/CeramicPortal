@@ -34,6 +34,13 @@ module.exports = function(router) {
         });
     });
 
+    // // route to empty a cart
+    // router.get('/remove', function(req,res) {
+    //     req.session.cart = {};
+    //     // redirect to cart
+    //     res.redirect('/cart');
+    // })
+
     //route for adding a product to cart & fetching the id of the product.
     router.post('/:id', function(req,res) {
         req.session.cart = req.session.cart || {};

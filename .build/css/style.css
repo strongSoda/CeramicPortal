@@ -4,8 +4,6 @@
     padding: 0%;
 }
 
-.product{}
-
 .product h4{
     margin-top: 15px;
 }
@@ -126,4 +124,26 @@ input[type="submit"] {
     background-color: #1779ba;
     color: #efefef;
     border: none;
+}
+
+.dontshowme {
+    display: none;
+}
+
+.filter li {
+    list-style: none;
+    display: inline;
+    margin-left: 1.2em;
+}
+
+.filter li a {
+    color: #efefef;
+}
+
+.filter {
+    text-align: center;
+    background: #1779ba;
+    color: #efefef;
+    width: 100vw;
+    font-size: 1.2em;
 }

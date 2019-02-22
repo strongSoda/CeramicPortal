@@ -25,6 +25,7 @@
                         <tr>
                             <th width="650">Item</th>
                             <th width="100">Quantity</th>
+                            <th width="100"> </th>
                             <th width="100">Total</th>
                             <th width="100"></th>
                         </tr>
@@ -40,11 +41,11 @@
                                 <td>
                                     <a href="/products/details/{._id}">{.title}</a>
                                 </td>
-                                <td>{.qty}</td>
+                                <td id="qty">{.qty}</td><td><input onclick="decrementQty()" type="button" value="-"></td>
 
                                 <!-- multiply the price by qty -->
                                 <!-- this will show total per product -->
-                                <td>INR. {@math key="{.price}"
+                               <td id="price"> INR.  {@math key="{.price}"
                                     method="multiply" operand="{.qty}" /} 
                                 </td>
                             </tr>
@@ -79,7 +80,7 @@
                  <!-- currency code -->
                  <input type="hidden" name="currency_code" value="INR">
                  <!-- price -->
-                 <input type="hidden" name="amount" value="{cart.total}">
+                 <input id="totAmt" type="hidden" name="amount" value="{cart.total}">
                  <!-- specify shipping -->
                  <input type="hidden" name="no_shipping" value="1">
                  <!-- return method -->
@@ -112,9 +113,21 @@
 
     <script>
         function cod() {
-            var region = prompt('Enter your location');
+            console.log(Number(document.getElementById("totAmt").value));
+            if(Number(document.getElementById("totAmt").value) > 50000) {
+                alert("Cash on Delivery not eligible on orders above 50000")
+            } else {
+                var region = prompt('Enter your location');
             alert("Your order will be delivered by our " + region + " distributor");
             window.location.href = "http://localhost:8000/";
+            }
+        }
+
+        function decrementQty() {
+            var price = Number(document.getElementById("price"));
+            price.innerHTML = price.innerHTML - (price/(document.getElementById("qty").innerHTML));
+            document.getElementById("qty").innerHTML--;
+           
         }
     </script>
 {/body}

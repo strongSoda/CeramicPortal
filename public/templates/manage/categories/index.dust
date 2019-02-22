@@ -1,2 +1,73 @@
-Index categories
+
 {>"layouts/manage" /}
+{<body}
+<div class="grid-container">  
+    <h2>Categories</h2>
+    <p><a href="/manage/categories/add">Add Category</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th width="200">Name</th>
+                <th width="180">Update</th>
+                <th width="180">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>Bedroom Floorings</td>
+                    <td><a class="button" href="/manage/categories/edit/{._id}">EDIT</a></td>
+                    <td>
+                        <form action="/manage/categories/delete/{._id}" method="post">
+                            <input type="submit" value="Delete" class="button alert">
+                            <input type="hidden" name="_csrf" value="{_csrf}">
+                            <input type="hidden" name="_method" value="DELETE">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                        <td>Bedroom Walls</td>
+                        <td><a class="button" href="/manage/categories/edit/{._id}">EDIT</a></td>
+                        <td>
+                            <form action="/manage/categories/delete/{._id}" method="post">
+                                <input type="submit" value="Delete" class="button alert">
+                                <input type="hidden" name="_csrf" value="{_csrf}">
+                                <input type="hidden" name="_method" value="DELETE">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>Kitchen Walls</td>
+                            <td><a class="button" href="/manage/categories/edit/{._id}">EDIT</a></td>
+                            <td>
+                                <form action="/manage/categories/delete/{._id}" method="post">
+                                    <input type="submit" value="Delete" class="button alert">
+                                    <input type="hidden" name="_csrf" value="{_csrf}">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>Ceramic Tiles</td>
+                                <td><a class="button" href="/manage/categories/edit/{._id}">EDIT</a></td>
+                                <td>
+                                    <form action="/manage/categories/delete/{._id}" method="post">
+                                        <input type="submit" value="Delete" class="button alert">
+                                        <input type="hidden" name="_csrf" value="{_csrf}">
+                                        <input type="hidden" name="_method" value="DELETE">
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>Polished vitrified tiles</td>
+                                    <td><a class="button" href="/manage/categories/edit/{._id}">EDIT</a></td>
+                                    <td>
+                                        <form action="/manage/categories/delete/{._id}" method="post">
+                                            <input type="submit" value="Delete" class="button alert">
+                                            <input type="hidden" name="_csrf" value="{_csrf}">
+                                            <input type="hidden" name="_method" value="DELETE">
+                                        </form>
+                                    </td>
+                                </tr>
+        </tbody>
+    </table>     
+{/body}
