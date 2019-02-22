@@ -56,6 +56,17 @@
               {/products}
             </div>
         </div>  
+        <form onsubmit="wait()">
+            <h2>Requirements</h2>
+            <label for="category">Category <select name="Category" id="">
+                <option value="">Ceramic Tiles</option>
+                <option value="">Blazed Tiles</option>
+                <option value="">Polished</option>
+            </select></label>
+            <label for="dimensions">Dimensions <input type="text" name="dimensions" id=""></label>
+            <label for="qty">qty <input type="number" name="qty" id=""></label>
+            <input type="submit" value="Submit">
+        </form>
         <script>
             function categorize (category) {
                 console.log("inside categorize");
@@ -72,6 +83,10 @@
                         
                     }
                 }
+            }
+
+            function wait(){
+                alert("Thanks for contacting us. We'll process your request soon!");
             }
         </script>
     {/body}
