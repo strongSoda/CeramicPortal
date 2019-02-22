@@ -21,7 +21,11 @@
                                 <div class="cell small-12 product">
                                     <label for="seller">
                                             Seller
-                                        <input type="text" required name="seller" id="" placeholder="Sir Rajnikanth">
+                                        <select>
+                                            <option>Kajaria Tiles</option>
+                                            <option>Somany Tiles</option>
+                                            <option>Aone Ceramics</option>
+                                        </select> 
                                     </label>
                                 </div>
                             </div>
